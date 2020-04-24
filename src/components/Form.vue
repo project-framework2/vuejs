@@ -15,10 +15,7 @@
             <div class="form-group">
               <label for="select1">Spécialité</label>
               <select class="form-control" id="select1" v-model="select1">
-                <option value="Informatique">Informatique</option>
-                <option value="Electronique">Electronique</option>
-                <option value="Sciences">Siences</option>
-                <option value="Mécanique">Mécanique</option>
+                <option v-for="(sp, index) in specialities" :key="index" :value="sp">{{sp}}</option>
               </select>
             </div>
           </div>
@@ -29,10 +26,7 @@
             <div class="form-group">
               <label for="select2">Année</label>
               <select multiple class="form-control" id="select2" v-model="select2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+                <option v-for="index in 4" :key="index" :value="index">{{index}}</option>
               </select>
             </div>
           </div>
@@ -63,6 +57,7 @@
     components: {CustomHeader},
     data: function() {
       return {
+        specialities: ["Informatique", "Sciences", "Mécanique", "Electronique"],
         text: "",
         select1: "",
         select2: [],
