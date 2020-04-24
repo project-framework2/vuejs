@@ -2,13 +2,13 @@
   <div>
     <custom-header></custom-header>
 
-    <h1 class="display-4 text-center" >Framework BootStrap</h1>
+    <h1 class="display-4 text-center" >Framework BootStrap (With Vue.Js)</h1>
     <ul class="text-left">
       <li>
-        Voici un site fait avec le Framework Bootstrap, il y à plusieurs fenêtres disponibles.
+        Voici un site fait avec le Framework Bootstrap ainsi que Vue.Js, il y a plusieurs fenêtres disponibles.
       </li>
       <li>
-        Il y à un carrouse avec de très belles photos !
+        Il y a un carrousel avec de très belles photos !
       </li>
       <li>
         Un formulaire basique !
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-  import CustomHeader from "./Header";
+  import CustomHeader from "../components/Header";
 
 export default {
   name: 'HelloWorld',

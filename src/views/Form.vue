@@ -50,7 +50,7 @@
 </template>
 
 <script>
-  import CustomHeader from './Header'
+  import CustomHeader from '../components/Header'
 
   export default {
     name: "Form",

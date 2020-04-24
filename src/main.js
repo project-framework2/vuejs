@@ -3,9 +3,9 @@ import App from './App.vue'
 import VueRouter from "vue-router";
 
 import 'bootstrap'
-import HelloWorld from "./components/HelloWorld";
-import Carousel from './components/Carousel'
-import Form from "./components/Form";
+import HelloWorld from "./views/HelloWorld";
+import Carousel from './views/Carousel'
+import Form from "./views/Form";
 
 Vue.config.productionTip = false
 
