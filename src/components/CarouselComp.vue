@@ -2,11 +2,7 @@
 	<div>
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000" style="width: 60%; margin: auto;">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" v-for="index in pictures.length" :data-slide-to="index-1" :key="index" :class="{active: index === 1}"></li>
       </ol>
       <div class="carousel-inner">
 
@@ -34,7 +30,9 @@
 <script>
 	export default {
     name: "CarouselComp",
-    props: ['pictures']
+    props: {
+      pictures: Array
+    }
   }
 </script>
 

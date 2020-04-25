@@ -1,7 +1,5 @@
 <template>
   <div>
-    <custom-header></custom-header>
-
     <h1 class="display-4 text-center" >Framework BootStrap (With Vue.Js)</h1>
     <ul class="text-left">
       <li>
@@ -21,11 +19,9 @@
 </template>
 
 <script>
-  import CustomHeader from "../components/Header";
 
 export default {
-  name: 'HelloWorld',
-  components: {CustomHeader}
+  name: 'HelloWorld'
  }
 </script>
 

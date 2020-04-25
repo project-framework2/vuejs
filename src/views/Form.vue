@@ -1,6 +1,5 @@
 <template>
   <div>
-    <custom-header></custom-header>
     <div class="container">
       <form>
         <div class="row">
@@ -50,11 +49,8 @@
 </template>
 
 <script>
-  import CustomHeader from '../components/Header'
-
   export default {
     name: "Form",
-    components: {CustomHeader},
     data: function() {
       return {
         specialities: ["Informatique", "Sciences", "Mécanique", "Electronique"],

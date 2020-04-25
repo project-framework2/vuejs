@@ -1,7 +1,5 @@
 <template>
   <div>
-    <custom-header></custom-header>
-
     <div class="container mt-3">
       <carousel-comp :pictures="pictures"></carousel-comp>
     </div>
@@ -9,12 +7,11 @@
 </template>
 
 <script>
-  import CustomHeader from "../components/Header"
   import CarouselComp from "../components/CarouselComp"
 
   export default {
     name: "Carousel",
-    components: {CustomHeader, CarouselComp},
+    components: {CarouselComp},
     data: function() {
       return {
         pictures: [
